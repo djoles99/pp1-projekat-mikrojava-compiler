@@ -1,0 +1,37 @@
+// Test301
+
+program test301
+
+namespace Konstante{
+	const int nula = 0;
+	const int jedan = 1;
+	const int pet = 5;
+	
+	{}
+}
+
+namespace Nizovi{
+	char nizch[];
+	int niz[];
+	
+	{}
+}
+	
+{
+	void main()	
+		int bodovi;
+	{
+		Nizovi::nizch = new char[1];
+		Nizovi::niz = new int[3];
+		Nizovi::niz[0] = 1;
+		Nizovi::niz[1] = 2;
+		Nizovi::niz[2] = 6;
+		print(Nizovi::niz[2]);
+		Nizovi::niz[2]++;
+		print(Nizovi::niz[2]);
+			
+			
+	}
+}
+
+

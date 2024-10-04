@@ -1,0 +1,71 @@
+// Test301
+
+program test301
+
+namespace Konstante{
+	const int nula = 0;
+	const int jedan = 1;
+	const int pet = 5;
+	
+	{}
+}
+
+namespace Nizovi{
+	int niz[];
+	char nizch[];
+	
+	{}
+}
+
+	int a;
+	
+{
+	void main()	
+		int bodovi;
+		bool bt;
+	{
+		using namespace Nizovi;
+		using namespace Konstante;
+		goto labela2;
+		bodovi = 0;
+		bodovi++;
+		bodovi = bodovi + jedan;
+		bodovi = bodovi * pet;
+		bodovi--;
+		print(bodovi);
+		
+		niz = new int[3];
+		niz[nula] = jedan;
+		niz[1] = 2;
+		niz[niz[jedan]] =niz[niz[0]] * 3;
+		bodovi = niz[2]/niz[0];
+		print(bodovi);
+		print(niz[2]);
+			
+		
+		nizch = new char[3];
+		nizch[0] = 'a';
+		nizch[jedan] = 'b';
+		nizch[pet - 3] = 'c';
+		print(nizch[1]);
+		print(nizch[jedan * 2]);
+			
+		a=1;
+		//read(bodovi);
+		bodovi = -bodovi + (pet * a / 2 - jedan) * bodovi - (3 % 2 + 3 * 2 - 3); 
+		print(bodovi);print(eol);
+		print(niz[1]);
+		niz[1]++;
+		print(niz[1]);
+		print(eol);
+		a=0;
+		labela1:
+		print(1234+a);
+		if(a==0){a++; goto labela1;}
+		if(a==1){goto labela2;}
+		print(4321);
+		labela2:
+	}
+}
+
+
